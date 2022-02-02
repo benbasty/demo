@@ -1,23 +1,19 @@
 package com.springApplications.demo;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class Employee {
-    int id;
-    String name;
-    int salary;
+    private int id;
+    private String name;
+    private int salary;
 
     public Employee() {
 
     }
 
     public Employee(int id, String name, int salary) {
-
         this.id = id;
         this.name = name;
         this.salary = salary;
-
     }
 
     public int getId() {
@@ -50,9 +46,5 @@ public class Employee {
         return "Employee's id = " + id + "\n" +
                 "Employee's name = " + name + "\n" +
                 "Employee's salary = " + salary;
-    }
-
-    public void display() {
-        System.out.println("Displaying ----");
     }
 }
